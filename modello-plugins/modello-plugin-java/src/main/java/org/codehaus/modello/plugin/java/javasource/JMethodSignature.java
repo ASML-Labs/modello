@@ -159,7 +159,7 @@ public final class JMethodSignature
         exceptions.addElement( exp );
 
         //-- create comment
-        jdc.addDescriptor( JDocDescriptor.createExceptionDesc( expClassName, null ) );
+        jdc.addDescriptor( JDocDescriptor.createExceptionDesc( expClassName, expClassName + " if any.") );
     } //-- addException
 
     /**
@@ -194,7 +194,7 @@ public final class JMethodSignature
         params.put( pName, parameter );
 
         //-- create comment
-        jdc.addDescriptor( JDocDescriptor.createParamDesc( pName, null ) );
+        jdc.addDescriptor( JDocDescriptor.createParamDesc( pName, "a " + pName + " object.") );
 
     } //-- addParameter
 
